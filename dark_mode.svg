@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="Andale Mono,AndaleMono,Consolas,monospace" width="975px" height="550px" font-size="16px">
+<?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" font-family="Andale Mono,AndaleMono,Consolas,monospace" width="975px" height="550px" font-size="16px">
 <style>
 .keyColor {fill: #953800;}
 .valueColor {fill: #0a3069;}
@@ -20,7 +19,7 @@ text, tspan {white-space: pre;}
 <tspan x="370" y="30">jp@curada</tspan>
 <tspan x="370" y="50">——————</tspan>
 <tspan x="370" y="70" class="keyColor">OS</tspan>: <tspan class="valueColor">Windows 11</tspan>
-<tspan x="370" y="90" class="keyColor">Uptime</tspan>: <tspan id="age" class="valueColor">19 years, 2 months, 27 days</tspan>
+<tspan x="370" y="90" class="keyColor">Uptime</tspan>: <tspan id="age" class="valueColor">20 years, 2 months, 27 days</tspan>
 <tspan x="370" y="110" class="keyColor">Host</tspan>: <tspan class="valueColor">Polytechnic University of the Philippines</tspan><tspan class="commentColor"> #PUP</tspan>
 <tspan x="370" y="130" class="keyColor">Kernel</tspan>: <tspan class="valueColor">BS Computer Science</tspan><tspan class="commentColor"> #BSCS</tspan>
 <tspan x="370" y="150" class="keyColor">IDE</tspan>: <tspan class="valueColor">VSCode, PyCharm</tspan>
@@ -39,7 +38,7 @@ text, tspan {white-space: pre;}
 
 <tspan x="370" y="450" class="keyColor">GitHub Stats</tspan>:
 <tspan x="370" y="470">——————</tspan>
-<tspan x="370" y="490" class="keyColor">Repos</tspan>: <tspan id="repos" class="valueColor">0</tspan> {<tspan class="keyColor">Contributed</tspan>: <tspan id="contributed" class="valueColor">0</tspan>} | <tspan class="keyColor">Commits</tspan>: <tspan id="commits" class="valueColor">0</tspan> | <tspan class="keyColor">Stars</tspan>: <tspan id="stars" class="valueColor">0</tspan>
-<tspan x="370" y="510" class="keyColor">Followers</tspan>: <tspan id="followers" class="valueColor">0</tspan> | <tspan class="keyColor">Lines of Code</tspan>: <tspan id="loc" class="valueColor">0</tspan> (<tspan id="additions" class="addColor">0++</tspan>, <tspan id="deletions" class="delColor">0--</tspan>)
+<tspan x="370" y="490" class="keyColor">Repos</tspan>: <tspan id="repos" class="valueColor">31</tspan> {<tspan class="keyColor">Contributed</tspan>: <tspan id="contributed" class="valueColor">0</tspan>} | <tspan class="keyColor">Commits</tspan>: <tspan id="commits" class="valueColor">305</tspan> | <tspan class="keyColor">Stars</tspan>: <tspan id="stars" class="valueColor">3</tspan>
+<tspan x="370" y="510" class="keyColor">Followers</tspan>: <tspan id="followers" class="valueColor">7</tspan> | <tspan class="keyColor">Lines of Code</tspan>: <tspan id="loc" class="valueColor">0</tspan> (<tspan id="additions" class="addColor">0++</tspan>, <tspan id="deletions" class="delColor">0--</tspan>)
 </text>
 </svg>

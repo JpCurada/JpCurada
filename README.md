@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=consolas&size=50&duration=4000&color=FFA657&center=true&vCenter=true&width=550&height=75&lines=Computer+Science+Student;Aspiring+Data+Professional;AI/ML+Enthusiast;Python+lang+alam">
+  <img src="https://readme-typing-svg.herokuapp.com?font=consolas&size=50&duration=4000&color=FFA657&center=true&vCenter=true&width=550&height=75&lines=CS+Student;Data+Professional;AI/ML+Enthusiast;Python+lang+alam">
 </div
 
 <a href="https://github.com/JpCurada/JpCurada">

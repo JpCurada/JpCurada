@@ -2,6 +2,7 @@ import datetime
 from dateutil import relativedelta
 import requests
 import os
+from xml.dom import minidom
 
 # Configuration
 HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
@@ -35,6 +36,11 @@ def get_github_stats():
                 totalCount
                 nodes {
                     stargazerCount
+                    languages(first: 10) {
+                        nodes {
+                            name
+                        }
+                    }
                 }
             }
             followers {
@@ -57,39 +63,30 @@ def get_github_stats():
                   data['contributionsCollection']['restrictedContributionsCount']
     }
 
-def generate_readme(stats, age):
-    """Generates README content"""
-    return f"""<h1 align="center">Hi 👋, I'm John Paul Curada</h1>
-
-<p align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=consolas&size=30&duration=4000&color=42047E&center=true&vCenter=true&width=550&height=75&lines=Computer+Science+Student;Software+Developer;Python+|+C+|+Go+Enthusiast">
-</p>
-
-## About Me
-- 🎓 {age} old
-- 📚 BS Computer Science student at Polytechnic University of the Philippines
-- 💻 Currently in my 2nd year
-- 🌱 Learning Python, C, Go, SQL, and Web Development
-
-## GitHub Stats
-- 📊 Public Repositories: {stats['repositories']}
-- ⭐ Total Stars Earned: {stats['stars']}
-- 👥 Followers: {stats['followers']}
-- 🔥 Total Commits: {stats['commits']}
-
-## Tech Stack
-- Languages: Python, C, Go, SQL
-- Web Development: HTML/CSS
-- Tools: Git, VS Code
-
-## 🤝 Connect With Me
-- 📧 Email: johncurada.02@gmail.com
-- 🔗 LinkedIn: [JpCurada](https://www.linkedin.com/in/jpcurada/)
-- 🐱 GitHub: [JpCurada](https://github.com/JpCurada)
-
----
-<p align="center">Last updated: {datetime.datetime.now().strftime('%B %d, %Y')}</p>
-"""
+def update_svg(filename, stats, age):
+    """Updates SVG file with current stats"""
+    svg = minidom.parse(filename)
+    tspans = svg.getElementsByTagName('tspan')
+    
+    # Update values in SVG
+    # Note: These indices need to match your SVG file structure
+    stats_map = {
+        'age': age,
+        'repos': str(stats['repositories']),
+        'stars': str(stats['stars']),
+        'commits': str(stats['commits']),
+        'followers': str(stats['followers'])
+    }
+    
+    # Update each tspan element
+    for tspan in tspans:
+        key = tspan.getAttribute('id')
+        if key in stats_map:
+            tspan.firstChild.data = stats_map[key]
+    
+    # Save updated SVG
+    with open(filename, 'w', encoding='utf-8') as f:
+        f.write(svg.toxml())
 
 if __name__ == '__main__':
     try:
@@ -102,13 +99,12 @@ if __name__ == '__main__':
         # Fetch GitHub stats
         stats = get_github_stats()
         
-        # Generate and save README
-        readme_content = generate_readme(stats, age)
-        with open('README.md', 'w', encoding='utf-8') as f:
-            f.write(readme_content)
-            
-        print("README.md updated successfully!")
+        # Update SVGs
+        update_svg('dark_mode.svg', stats, age)
+        update_svg('light_mode.svg', stats, age)
+        
+        print("SVGs updated successfully!")
         
     except Exception as e:
-        print(f"Error updating README: {str(e)}")
+        print(f"Error updating SVGs: {str(e)}")
         raise

@@ -1,1 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Andale Mono,AndaleMono,Consolas,monospace" width="975px" height="550px" font-size="16px">
+<style>
+.keyColor {fill: #953800;}
+.valueColor {fill: #0a3069;}
+.addColor {fill: #1a7f37;}
+.delColor {fill: #cf222e;}
+.commentColor {fill: #8b949e;}
+text, tspan {white-space: pre;}
+</style>
 
+<rect width="970px" height="530px" fill="#f6f8fa" rx="15"/>
+
+<text x="15" y="30" fill="#24292f" class="ascii">
+<tspan x="15" y="30">                                    ####********###</tspan>
+<tspan x="15" y="50">                               %%##########*##%%%%####</tspan>
+<tspan x="15" y="70">                             %%%%%%%%%%%%%%%%%#%%%%####</tspan>
+<tspan x="15" y="90">                          %%%%%%%%%%@@%%%%@@%%%%%%%#%%##</tspan>
+<tspan x="15" y="110">                        %%%%%%%%@@@@@@@@@@@@@@@@@@%%%%%%%</tspan>
+<tspan x="15" y="130">                       %%@%%@@@%@@@@@@@@@@%@@@%%@@%%%%%%%</tspan>
+<tspan x="15" y="150">                      %#%%%@@@@@%@@@@@@@@@@%%%%%@@@%%%%%##</tspan>
+<tspan x="15" y="170">                      %%%%%@@@@@%%%%###%%%%@%%%%@%%%@@@@%%%</tspan>
+<tspan x="15" y="190">                      %@%@@@#%%#*+++++++***#%%%#@@%##%@@%%%%</tspan>
+<tspan x="15" y="210">                     %@@@@@%@%*+=============**###**#%%#%@%#</tspan>
+<tspan x="15" y="230">                     @@@@@@@%#*++======----==-=-=---=+#%%%%%%</tspan>
+<tspan x="15" y="250">                     @@@@@@@#*+++====--------::::----=+%%%%%%</tspan>
+<tspan x="15" y="270">                     @@@@@%#**++==----------:::::-----=#%%%%%</tspan>
+<tspan x="15" y="290">                     @@@@@%##*+++===-----=====--------==##%%</tspan>
+<tspan x="15" y="310">                      @@@@##*+++****+++++++**#%%##**++===##%</tspan>
+<tspan x="15" y="330">                      @@@%#*#%%%%%%###********#*+=-====--=##</tspan>
+<tspan x="15" y="350">                       @@##%##****#####**+**####%##*+==---*#</tspan>
+<tspan x="15" y="370">                       @%###**##%%%%###*-:-+*####*+===----=+-=-</tspan>
+<tspan x="15" y="390">                       @%*###%%%#***##*+-:-----+++=-::::::-=+*=:</tspan>
+<tspan x="15" y="410">                      #%%********++=++++-::---:-----:.::::---==:</tspan>
+<tspan x="15" y="430">                     #%##**+==-----=+*+=-:::--=+==--:::::--=+--:</tspan>
+<tspan x="15" y="450">                     ####**++===---=++***++==--+*++===-----=--::</tspan>
+<tspan x="15" y="470">                      ##%****++=====#*%%%#####+--+**++======-:</tspan>
+<tspan x="15" y="490">                       #%#*****++==*###%###*=-----+#**+====-::</tspan>
+<tspan x="15" y="510">                        ####****+++*###*+=--=====+*##*+=====</tspan>
+<tspan x="15" y="530">                         *###*****#########**+=++++++++++===</tspan>
+<tspan x="15" y="550">                          #####**###%%#*+=======---=++++===+</tspan>
+<tspan x="15" y="570">                            #################*+======++===+</tspan>
+<tspan x="15" y="590">                           ###############*++++==--====++</tspan>
+<tspan x="15" y="610">                            ############**++==------==++-</tspan>
+<tspan x="15" y="630">                              ############**+==---==+**--</tspan>
+<tspan x="15" y="650">                              ###%#########**++=+++**+=--=</tspan>
+<tspan x="15" y="670">                            %@%#####%############**+==---#</tspan>
+<tspan x="15" y="690">                         %%%%@@%##############***++==----##*</tspan>
+<tspan x="15" y="710">                      %%%%%%%@@@@###########*+++++==-----#%**+</tspan>
+<tspan x="15" y="730">                  ##%%%%%%%%%@@@@@##*#########*+====----=%%***+++*</tspan>
+<tspan x="15" y="750">             ######%%%%%%%%%%@@@@@@%#***######*+====---=@%%***+++++++*</tspan>
+<tspan x="15" y="770">        ############%%%%%%%%%%@@@@@@@#****##****+==---=#@%@**++++***+++++*</tspan>
+<tspan x="15" y="790">   #####################%%%%%%%%@@@@@@**++****++====-=*@%%@**++++**************</tspan>
+<tspan x="15" y="810">#########################%%%###%%%%%%%@@@@@@#==+****+++=-=*%%%%@#**+**********************#</tspan>
+<tspan x="15" y="830">%%%###################*################%#%@@@@@@%=-=++++++=-+%%%%%@#*+++************************</tspan>
+</text>
+
+<text x="370" y="30" fill="#24292f">
+<tspan x="370" y="30">jp@curada</tspan>
+<tspan x="370" y="50">——————</tspan>
+<tspan x="370" y="70" class="keyColor">OS</tspan>: <tspan class="valueColor">Windows 11</tspan>
+<tspan x="370" y="90" class="keyColor">Uptime</tspan>: <tspan id="age" class="valueColor">19 years, 2 months, 27 days</tspan>
+<tspan x="370" y="110" class="keyColor">Host</tspan>: <tspan class="valueColor">Polytechnic University of the Philippines</tspan><tspan class="commentColor"> #PUP</tspan>
+<tspan x="370" y="130" class="keyColor">Kernel</tspan>: <tspan class="valueColor">BS Computer Science</tspan><tspan class="commentColor"> #BSCS</tspan>
+<tspan x="370" y="150" class="keyColor">IDE</tspan>: <tspan class="valueColor">VSCode, PyCharm</tspan>
+
+<tspan x="370" y="190" class="keyColor">Languages</tspan>.<tspan class="keyColor">Programming</tspan>: <tspan class="valueColor">Python, C, Go, SQL</tspan>
+<tspan x="370" y="210" class="keyColor">Languages</tspan>.<tspan class="keyColor">Computer</tspan>: <tspan class="valueColor">HTML, CSS</tspan>
+<tspan x="370" y="230" class="keyColor">Languages</tspan>.<tspan class="keyColor">Real</tspan>: <tspan class="valueColor">English, Filipino</tspan>
+
+<tspan x="370" y="270" class="keyColor">Hobbies</tspan>.<tspan class="keyColor">Software</tspan>: <tspan class="valueColor">Data Engineering, Machine Learning</tspan>
+<tspan x="370" y="290" class="keyColor">Hobbies</tspan>.<tspan class="keyColor">Hardware</tspan>: <tspan class="valueColor">Custom Keyboards, Home Server</tspan>
+
+<tspan x="370" y="330" class="keyColor">Contact</tspan>:
+<tspan x="370" y="350">——————</tspan>
+<tspan x="370" y="370" class="keyColor">Email</tspan>: <tspan class="valueColor">johncurada.02@gmail.com</tspan>
+<tspan x="370" y="390" class="keyColor">LinkedIn</tspan>: <tspan class="valueColor">JpCurada</tspan>
+
+<tspan x="370" y="450" class="keyColor">GitHub Stats</tspan>:
+<tspan x="370" y="470">——————</tspan>
+<tspan x="370" y="490" class="keyColor">Repos</tspan>: <tspan id="repos" class="valueColor">0</tspan> {<tspan class="keyColor">Contributed</tspan>: <tspan id="contributed" class="valueColor">0</tspan>} | <tspan class="keyColor">Commits</tspan>: <tspan id="commits" class="valueColor">0</tspan> | <tspan class="keyColor">Stars</tspan>: <tspan id="stars" class="valueColor">0</tspan>
+<tspan x="370" y="510" class="keyColor">Followers</tspan>: <tspan id="followers" class="valueColor">0</tspan> | <tspan class="keyColor">Lines of Code</tspan>: <tspan id="loc" class="valueColor">0</tspan> (<tspan id="additions" class="addColor">0++</tspan>, <tspan id="deletions" class="delColor">0--</tspan>)
+</text>
+</svg>

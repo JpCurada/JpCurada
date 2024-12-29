@@ -24,12 +24,23 @@ def simple_request(func_name, query, variables):
     """
     Makes a GitHub GraphQL API request
     """
-    request = requests.post('https://api.github.com/graphql', 
-                          json={'query': query, 'variables': variables}, 
-                          headers=HEADERS)
-    if request.status_code == 200:
-        return request
-    raise Exception(f"{func_name} failed: {request.status_code} {request.text}")
+    try:
+        request = requests.post(
+            'https://api.github.com/graphql', 
+            json={'query': query, 'variables': variables}, 
+            headers=HEADERS
+        )
+        
+        if request.status_code == 200:
+            return request
+            
+        print(f"Request failed with status {request.status_code}")
+        print("Response:", request.text)
+        raise Exception(f"{func_name} failed: {request.status_code} {request.text}")
+        
+    except Exception as e:
+        print(f"Error in {func_name}: {str(e)}")
+        raise
 
 def graph_commits(start_date, end_date):
     """
@@ -51,8 +62,15 @@ def graph_commits(start_date, end_date):
         'login': USER_NAME
     }
     request = simple_request(graph_commits.__name__, query, variables)
-    data = request.json()['data']['user']['contributionsCollection']
-    return data['totalCommitContributions'] + data['restrictedContributionsCount']
+    data = request.json()
+    
+    # Add error handling and debugging
+    if data.get('data') is None or data.get('data').get('user') is None:
+        print("API Response:", data)
+        return 0  # Return 0 if no data is found
+        
+    contributions = data['data']['user']['contributionsCollection']
+    return contributions['totalCommitContributions'] + contributions['restrictedContributionsCount']
 
 def follower_getter():
     """

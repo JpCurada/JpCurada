@@ -47,7 +47,7 @@ text, tspan {white-space: pre;}
 <tspan x="480" y="130" class="keyColor">Kernel</tspan>: <tspan class="valueColor">BS Computer Science</tspan><tspan class="commentColor"> #2nd Year</tspan>
 <tspan x="480" y="150" class="keyColor">IDE</tspan>: <tspan class="valueColor">Colab, Jupyter, VS Code</tspan>
 
-<tspan x="480" y="190" class="keyColor">Technologies</tspan>.<tspan class="keyColor">ProgrammingLanguages</tspan>: <tspan class="valueColor">Python, R, SQL, C, Go, Java</tspan>
+<tspan x="480" y="190" class="keyColor">Technologies</tspan>.<tspan class="keyColor">ProgrammingLanguages</tspan>: <tspan class="valueColor">Python, SQL, C, Java</tspan>
 <tspan x="480" y="210" class="keyColor">Technologies</tspan>.<tspan class="keyColor">Platforms</tspan>: <tspan class="valueColor">AWS, GCP, Apache Airflow</tspan>
 <tspan x="480" y="230" class="keyColor">Technologies</tspan>.<tspan class="keyColor">Real</tspan>: <tspan class="valueColor">English, Filipino</tspan>
 
